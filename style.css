@@ -1,0 +1,30 @@
+body {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    background-image: linear-gradient(to right, rgb(0, 90, 155), rgb(103, 40, 161));
+    border-style: solid;
+}
+body::after{
+    content: "";
+    background-image: url(city.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: .2;
+}
+h1 {
+    text-align: center;
+    color: white
+}
+legend {
+    font-weight: bold;
+    color: white;
+}
+label {
+    color: whitesmoke;
+}
+:placeholder-shown {
+    font-style: italic;
+}

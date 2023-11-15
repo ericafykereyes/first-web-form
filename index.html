@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web Form</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .name-info{
+            width: 300px
+        }
+        .contact-info{
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
     <h1>My First Web Form</h1>
@@ -11,26 +20,28 @@
         <fieldset>
             <legend>Name Information</legend>
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName"><br>
+            <input type="text" class="name-info" tabindex="1" required id="firstName" placeholder="Please type your First name" name="firstName"><br>
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" class="name-info" tabindex="2" required id="lastName" placeholder="Please type your Last name" name="lastName">
         </fieldset>
         <fieldset>
             <legend>Contact Information:</legend>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email"><br>
+            <input type="email" class="contact-info" tabindex="3" title="Input your email address " name="email" id="email" placeholder="example@example.com"><br>
             <label for="telephone">Phone:</label>
-            <input type="tel" name="telephone" id="telephone">
+            <input type="tel" class="contact-info" tabindex="4" title="Input a good mobile number" name="telephone" placeholder="6701234567" id="telephone">
         </fieldset>
         <fieldset>
-            <legend>Birthday:</legend>
+            <legend>Date Information:</legend>
             <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" tabindex="5" required id="dob"><br>
+            <label for="today">Today's Date:</label>
+            <input type="date" name="today" tabindex="6" value="2023-11-15" id="today">
         </fieldset>
         <fieldset>
-            <input type="submit">
+            <input type="submit" tabindex="7">
         </fieldset>
     </form>
-    <iframe name="cgi-results" id="cgi-results"/>
+    <iframe name="cgi-results" id="cgi-results">
 </body>
 </html>
